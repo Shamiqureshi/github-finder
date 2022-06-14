@@ -3,17 +3,15 @@ import './App.css'
 
 class App extends Component {
   render() {
+    const Name = 'John Doe';
+    const loading = true;
+    const Nobody = 'anyone is there!';
     return (
-        React.createElement('div',{className:'App'},
-        React.createElement('h1', {}, 'My favorite ice cream flavors'),
-        React.createElement('ul', {},
-      [
-        React.createElement('li', {}, 'Chocolate'),
-        React.createElement('li', {}, 'Vanilla'),
-        React.createElement('li', {}, 'Banana')
-      ]
+        <div className='App'>
+          <h1>My App</h1>
+          {loading ? <h4>Loading...</h4>:<h4>{Name}</h4>}
+        </div>
         )
-))
   }
 }
 
